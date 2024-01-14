@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bootstap 5 Responsive Admin Dashboard</title>
+</head>
+    
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <i><img class="logo-dashboard" src="images/favicon.ico" alt=""></i>Compony</div>
+            <div class="list-group list-group-flush my-3">
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                        class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-chart-line me-2"></i>Analysis</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-solid fa-inbox me-2"></i>Inbox</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-paperclip me-2"></i>History</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-solid fa-user me-2"></i>User</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-solid fa-hammer me-2"></i>Maintainence</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                        class="fas fa-solid fa-wrench me-2"></i>Setting</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+         
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <h2 class="fs-2 m-0">Dashboard</h2>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="images/search-icon.svg" style="height: 25px; width: 25px; margin-left: 15px; margin-top: 5px;" alt="">
+                    <input type="search" title="Search" style="margin-left: 20px;">
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span><i class="fas fa-regular fa-bell me-2"></i></span>
+                                <i class="fas fa-user me-2"></i>John Doe
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid px-4">
+                <div class="row g-3 my-2">
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2">23,456</h3>
+                                <p class="fs-5">Products</p>
+                            </div>
+                            
+                            <i class="fas fa-solid fa-star fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2">2345</h3>
+                                <p class="fs-5">Added</p>
+                            </div>
+                            <i class="fas fa-solid fa-cart-plus fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2">23,456</h3>
+                                <p class="fs-5">Sale</p>
+                            </div>
+                            <i class="fas fa-hand-holding-usd fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <div>
+                                <h3 class="fs-2">5678</h3>
+                                <p class="fs-5">Total</p>
+                            </div>
+                            <i class="fas fa-chart-line fs-1 primary-text border rounded-full secondary-bg p-3"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- new-------------- -->
+
+                <div class="row g-3 my-2">
+                    <div class="col-md-8">
+                        <div class="p-3 bg-white shadow-sm justify-content-around align-items-center rounded">
+                            <div class="d-flex">
+                                <p class="saletext">Sale</p>
+                              
+                            </div>
+                            <p class="text-end">Weekly   Monhtly  Yearly</p>
+                            <img class="img-fluid" style="width: 90%;" src="images/data-graph.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="p-3 bg-white shadow-sm justify-content-center align-items-center rounded">
+                            <div class="d-flex justify-content-center">
+                                <img class="img-fluid" style="width: 75%;" src="images/pie-chart.svg" alt="">
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="radio" style="margin: 10px;">
+                                    <i class="fas fa-solid fa-circle img-fluid" style="color: #ea0b0b;" ></i>
+                                    <span style="margin-left: 5px; margin-right: 5px;">America</span>
+                               </div>
+                               <div class="radio">
+                                <i class="fas fa-solid fa-circle img-fluid" style="color: #02e311;"></i>
+                                <span style="margin: 10px;">Canada</span>
+                            </div>
+                            </div>
+                            <div class="flex2">
+                                <div class="radio" style="margin-left: 10px;">
+                                    <i class="fas fa-solid fa-circle img-fluid" style="color: #a84300;"></i>
+                                    <span style="margin-top: 0px; margin: 10px;">Russia</span>
+                                </div>
+                                 <div class="radio">
+                                    <i class="fas fa-solid fa-circle img-fluid" style="color: #e7c30d;"></i>
+                                    <span style="margin: 10px;">India</span>
+                                </div>
+                            </div>
+
+                        </div>
+                     
+                        
+                    </div>
+                </div>
+                <!-- new-------------- -->
+<br><br>
+            <div class="p-3 bg-white shadow-sm justify-content-center align-items-center rounded">
+                <div class="table">
+                    <div class="head">
+                        <p class="invoices text-start" style="font-weight: bold; font-size: 25px;">Invoices</p>
+                        <p class="viewall text-end">View All</p>
+                    </div>
+                    <br>
+        
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">invoices</th>
+                            <th scope="col">compony name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">due date</th>
+                            <th scope="col">status</th>
+                            <th scope="col">Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">651335</th>
+                            <td>public firm</td>
+                            <td>ger@gmail.com</td>
+                            <td>24 May, 2023</td>
+                            <td class="Paid">Paid</td>
+                            <td>$47,800</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">558612</th>
+                            <td>tatvasoft</td>
+                            <td>ger@gmail.com</td>
+                            <td>24 May, 2023</td>
+                            <td class="Paid">Paid</td>
+                            <td>$47,800</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">558612</th>
+                            <td>tata</td>
+                            <td>ger@gmail.com</td>
+                            <td>24 May, 2023</td>
+                            <td class="Paid">Paid</td>
+                            <td>$47,800</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">651535</th>
+                            <td>tesla</td>
+                            <td>ger@gmail.com</td>
+                            <td>24 May, 2023</td>
+                            <td class="Paid">Paid</td>
+                            <td>$47,800</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">653518</th>
+                            <td>honda</td>
+                            <td>the Bird</td>
+                            <td>24 May, 2023</td>
+                            <td class="failed">Failed</td>
+                            <td>$47,800</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">487441</th>
+                            <td>yamaha</td>
+                            <td>ger@gmail.com</td>
+                            <td>24 May, 2023</td>
+                            <td class="Pending">Pending</td>
+                            <td>$47,800</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">267400</th>
+                            <td>hiro</td>
+                            <td>ger@gmail.com</td>
+                            <td>24 May, 2023</td>
+                            <td class="Paid">Paid</td>
+                            <td>$47,800</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">449003</th>
+                            <td>suzuki</td>
+                            <td>ger@gmail.com</td>
+                            <td>24 May, 2023</td>
+                            <td class="Paid">Failed</td>
+                            <td>$47,800</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">449003</th>
+                            <td>suzuki</td>
+                            <td>ger@gmail.com</td>
+                            <td>24 May, 2023</td>
+                            <td class="failed">Failed</td>
+                            <td>$47,800</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">55866</th>
+                            <td>hyunda</td>
+                            <td>ger@gmail.com</td>
+                            <td>24 May, 2023</td>
+                            <td class="Paid">Paid</td>
+                            <td>$47,800</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <br><br>
+                         
+                </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+</body>
+
+</html>
